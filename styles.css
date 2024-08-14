@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left-panel {
+    width: 60%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinea el contenido para que los botones estén en la parte inferior */
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-icon {
+    font-size: 32px;
+    font-weight: bold;
+    color: #080075; /* Color azul oscuro */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto; /* Alinea los botones al fondo del contenedor */
+}
+
+.action-buttons .btn {
+    flex: 1; /* Estira los botones para ocupar el espacio disponible */
+    margin: 0 5px; /* Espacio entre los botones */
+    padding: 12px 20px; /* Tamaño del botón */
+    font-size: 18px; /* Tamaño del texto del botón */
+    border: none;
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer;
+}
+
+.encrypt {
+    background-color: #053763;
+    color: #fff;
+}
+
+.decrypt {
+    background-color: #E0E0E0;
+    color: #020c66;
+}
+
+.copy-button-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%;
+    position: absolute; /* Posiciona el contenedor absolutamente para situarlo en la parte inferior */
+    bottom: 20px; /* Ajusta la distancia desde el borde inferior del contenedor derecho */
+}
+
+.copy-button-container .btn {
+    padding: 15px 0; /* Ajusta el tamaño del botón, sin ancho específico en padding horizontal */
+    font-size: 18px; /* Ajusta el tamaño del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #ebebeb; /* Color de fondo del botón */
+    color: #020c66; /* Color del texto del botón */
+    width: 100%; /* Estira el botón al ancho del contenedor */
+    max-width: 350px; /* Tamaño máximo del botón */
+    text-align: center; /* Centra el texto dentro del botón */
+}
+
+
+.right-panel {
+    width: 35%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinea el contenido para que el mensaje y el botón estén en la parte inferior */
+    position: relative;
+}
+
+.message-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.message-output {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.error-message {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto; /* Alinea el mensaje al fondo del contenedor */
+}
+
+.error-message img {
+    width: 120px; /* Tamaño de la imagen ajustado */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.error-text {
+    font-size: 24px; /* Tamaño del texto */
+    font-weight: bold;
+    color: #080075; /* Color azul oscuro */
+    margin-bottom: 10px;
+}
+
+.error-suggestion {
+    font-size: 20px; /* Tamaño del texto */
+    color: #666; /* Color más claro */
+}
+
